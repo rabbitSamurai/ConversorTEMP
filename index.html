@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Temp</title>
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
 </head>
 <body>
-    <h1>Conversor de Temp</h1>
-    <form action="">
-        <div id="celsiusDiv">
-            <label for="inputDeCelsius">Digite numero em celsius</label>
-            <input type="number" name="inputCelsius" id="inputCelsius"><br>
-            <input type="button" value="enviar" onclick="celsiustoFarenheit ();">
-            <h4>Resultado: <span id="span"> Temperatura em Farenheit </span></h4>
-        </div>
 
-        <div id="FarenheitDiv">
+    <div>
+        <form>
+        <h1>Calculadora de IMC</h1>
+        <label for="altura" >Altura:</label><br>
+        <input type="number" name="altura" id="altura"><br>
 
-            <label for="inputDeFarenheit">Digite numero em Farenheit</label>
-            <input type="number" name="inputFarenheit" id="inputFarenheit"><br>
-            <input type="button" value="enviar" onclick="farenheitToCelsius ();">
-            <h4>Resultado: <span id="spanf"> Temperatura em Celsius </span></h4>
-         </div>
+        <label for="peso">Peso:</label><br>
+        <input type="number" name="peso" id="peso"><br><br>
 
-    </form>
+        <input type="button" value="calcular" id="calc" onclick="Obesidade()">
+        <button type="reset" id="limpar">limpar</button>
+
+        <p>Seu IMC esta em <span id="resultImc"></span> Voce esta <span id="resultObesidade"></span></p>
+
+        </form>
+    </div>
+    
 </body>
 </html>
